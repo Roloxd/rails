@@ -1,0 +1,17 @@
+<p><strong>Title:</strong>
+<%= @article.name %>
+</p>
+<p><strong>Yield:</strong>
+<%= @article.yield %>
+</p>
+<p><strong>Ingredients:</strong>
+<%= @article.ingredients %>
+</p>
+<p><strong>Recipe:</strong>
+<%= @article.recipe %>
+</p>
+<p><strong>Image:</strong>
+<%= image_tag(@article.image) %>
+</p>
+<%= link_to 'Edit', edit_article_path(@article) %>
+<%= link_to 'Back', articles_path %>
